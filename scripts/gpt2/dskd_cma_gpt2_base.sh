@@ -28,7 +28,7 @@ DATA_DIR="${BASE_PATH}/data/dolly/"
 # task
 TASK="dual_space_kd_with_cma"
 # hp
-BATCH_SIZE=1
+BATCH_SIZE=2
 LR=0.0005
 GRAD_ACC=2
 EVAL_BATCH_SIZE=4
