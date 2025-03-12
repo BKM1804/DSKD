@@ -28,10 +28,10 @@ DATA_DIR="${BASE_PATH}/data/dolly/"
 # task
 TASK="dual_space_kd_with_cma"
 # hp
-BATCH_SIZE=4
+BATCH_SIZE=1
 LR=0.0005
 GRAD_ACC=2
-EVAL_BATCH_SIZE=32
+EVAL_BATCH_SIZE=4
 EPOCH=20
 KD_RATE=0.5
 KD_TEMP=2.0
@@ -41,7 +41,7 @@ PROJECTOR_LR=0.001
 # length
 MAX_LENGTH=512
 # runtime
-PRECISION="bf16"
+PRECISION="fp8"
 CRITERION="dual_space_kd_with_cma"
 KD_OBJ="forward_kl"
 CONFIG="${KD_OBJ}-${PRECISION}"
