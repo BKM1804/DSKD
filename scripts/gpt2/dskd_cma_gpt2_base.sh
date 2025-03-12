@@ -41,7 +41,7 @@ PROJECTOR_LR=0.001
 # length
 MAX_LENGTH=512
 # runtime
-PRECISION="fp8"
+PRECISION="fp16"
 CRITERION="dual_space_kd_with_cma"
 KD_OBJ="forward_kl"
 CONFIG="${KD_OBJ}-${PRECISION}"
