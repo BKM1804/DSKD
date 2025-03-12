@@ -125,8 +125,8 @@ def finetune(
     #     device,
     #     repeat_times=1
     # )
-
-    for epoch in range(args.num_epochs):
+    print("************Fine-Tuning***********")
+    for epoch in tqdm(range(args.num_epochs), desc = "fine_tuning: "):
         sampler.set_epoch(epoch)
         logging_output["epoch"] += 1
         log_rank("Start iterations of epoch {}".format(epoch + 1))
