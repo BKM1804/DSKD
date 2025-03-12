@@ -39,7 +39,7 @@ KD_TEMP=2.0
 PROJECTOR_CONFIG_PATH="${BASE_PATH}/configs/projector_config.json"
 PROJECTOR_LR=0.001
 # length
-MAX_LENGTH=512
+MAX_LENGTH=256
 # runtime
 PRECISION="fp16"
 CRITERION="dual_space_kd_with_cma"
